@@ -1,0 +1,18 @@
+<!-- HTML -->
+<div class="container mt-5">
+    <form id="form">
+      <input type="text" id="input" class="form-control mb-2" placeholder="What is your name?">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+
+<script>
+  const form = document.querySelector('#form')
+  const input = document.querySelector('#input')
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let name = input.value
+    form.innerHTML = `<h3 class="display-3">Hi, ${name}</h3>`
+  })
+</script>

@@ -1,0 +1,11 @@
+.ib {
+    display:inline-block
+  }
+#name {
+  font-size: 18px;
+  font-weight: bold;
+}
+#email {
+  font-size: 14px;
+}
+img { cursor: pointer; }
